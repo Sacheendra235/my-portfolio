@@ -1,0 +1,12 @@
+.footer {
+  background-color: #1f2937; /* dark professional color */
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 4px solid #4caf50; /* subtle highlight bar */
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.95rem;
+}

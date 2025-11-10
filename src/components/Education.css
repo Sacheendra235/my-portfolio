@@ -1,0 +1,79 @@
+.education {
+  padding: 80px 20px;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 50px;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.education-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.education-card h3 {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.education-card .institute {
+  display: block;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.education-card .year {
+  display: block;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .education-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

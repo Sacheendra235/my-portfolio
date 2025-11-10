@@ -1,0 +1,128 @@
+/* Navbar container */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #1f2937; /* dark background */
+  color: #fff;
+  z-index: 100;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+/* Navbar inner container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4caf50;
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* Links */
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Icon spacing */
+.nav-icon {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+/* Hover effects */
+.nav-menu a:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
+}
+
+/* Resume button special styling */
+.resume-btn {
+  background-color: #ffd700;
+  color: #1f2937;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #fff;
+  color: #4caf50;
+  transform: scale(1.05);
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #1f2937;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-menu.active {
+    max-height: 500px;
+  }
+}
