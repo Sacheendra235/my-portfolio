@@ -18,7 +18,7 @@ const projectsData = [
     title: "Portfolio Website",
     description: "Personal portfolio website using React, Node.js, and Tailwind CSS.",
     tech: ["React", "Node.js", "Tailwind", "CSS"],
-    link: "#",
+    link: "https://github.com/Sacheendra235/my-portfolio",
   },
 ];
 
